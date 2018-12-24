@@ -13,3 +13,14 @@ exports.get = function(event, context, callback) {
 
   callback(null, result);
 };
+
+
+exports.get2 = function(event, context, callback) {
+  var result = {
+    statusCode: 200,
+    body: "HELLO",
+    headers: {'content-type': 'text/html'}
+  };
+
+  callback(null, result);
+};
